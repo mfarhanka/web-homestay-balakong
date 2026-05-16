@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Add the deployed absolute sitemap URL here once the site domain is final.
+# Sitemap: https://example.com/sitemap.xml

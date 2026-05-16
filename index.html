@@ -3,12 +3,108 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Homestay @ Balakong | Amerin Residence</title>
-  <meta name="description" content="Simple landing page for Homestay @ Balakong in Amerin Residence with photo gallery and WhatsApp enquiry button.">
+  <title>Balakong Homestay at Amerin Residence | Photo Gallery & WhatsApp Booking</title>
+  <meta name="description" content="Book a comfortable Balakong homestay at Amerin Residence. View the interior, pool, gym, badminton court, and enquire instantly on WhatsApp.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="theme-color" content="#12545c">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_MY">
+  <meta property="og:title" content="Balakong Homestay at Amerin Residence">
+  <meta property="og:description" content="Comfortable short stays in Balakong with bright interiors, resort-style facilities, and direct WhatsApp booking.">
+  <meta property="og:image" content="assets/images/exterior/amerin-residence-pool-view.jpg">
+  <meta property="og:image:alt" content="Amerin Residence with pool view in Balakong">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Balakong Homestay at Amerin Residence">
+  <meta name="twitter:description" content="See the homestay gallery, amenities, and book directly on WhatsApp.">
+  <meta name="twitter:image" content="assets/images/exterior/amerin-residence-pool-view.jpg">
+  <link rel="preload" as="image" href="assets/images/exterior/amerin-residence-pool-view.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "name": "Balakong Homestay at Amerin Residence",
+          "inLanguage": "en-MY"
+        },
+        {
+          "@type": "WebPage",
+          "name": "Balakong Homestay at Amerin Residence",
+          "description": "Comfortable short stays in Balakong with photo gallery, shared facilities, and WhatsApp booking.",
+          "isPartOf": {
+            "@type": "WebSite",
+            "name": "Balakong Homestay at Amerin Residence"
+          },
+          "about": {
+            "@type": "LodgingBusiness",
+            "name": "Amerin Residence Homestay",
+            "description": "A Balakong homestay with interior comforts, pool access, gym, and badminton court.",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Balakong",
+              "addressRegion": "Selangor",
+              "addressCountry": "MY"
+            },
+            "amenityFeature": [
+              {
+                "@type": "LocationFeatureSpecification",
+                "name": "Pool deck",
+                "value": true
+              },
+              {
+                "@type": "LocationFeatureSpecification",
+                "name": "Lap pool",
+                "value": true
+              },
+              {
+                "@type": "LocationFeatureSpecification",
+                "name": "Fitness room",
+                "value": true
+              },
+              {
+                "@type": "LocationFeatureSpecification",
+                "name": "Badminton court",
+                "value": true
+              }
+            ]
+          }
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Where is the homestay located?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The homestay is located in Amerin Residence, Balakong, Selangor."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What facilities can guests use during the stay?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Guests can enjoy shared facilities including the pool deck, lap pool, fitness room, badminton court, and landscaped common areas."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I book this Balakong homestay?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Use the WhatsApp button on the page to send a direct booking enquiry message."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  </script>
 </head>
 <body>
   <a class="whatsapp-float" href="https://wa.me/?text=Hi%2C%20I%27m%20interested%20in%20the%20Amerin%20Residence%20homestay%20at%20Balakong." target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
@@ -56,7 +152,7 @@
     <section class="intro section-shell">
       <div class="section-heading">
         <p class="eyebrow">Why stay here</p>
-        <h2>Designed for guests who want a simple, comfortable base with lifestyle facilities close at hand.</h2>
+        <h2>A Balakong homestay designed for guests who want a simple, comfortable base with lifestyle facilities close at hand.</h2>
       </div>
       <div class="intro-grid">
         <article>
@@ -85,31 +181,31 @@
 
       <div class="gallery-grid">
         <figure class="feature-card feature-card-large">
-          <img src="assets/images/exterior/amerin-residence-pool-view.jpg" alt="Amerin Residence exterior with pool view">
+          <img src="assets/images/exterior/amerin-residence-pool-view.jpg" alt="Amerin Residence exterior with pool view" fetchpriority="high" decoding="async">
           <figcaption>Amerin Residence with sweeping poolside view</figcaption>
         </figure>
         <figure class="feature-card">
-          <img src="assets/images/interior/living-room-lounge.jpg" alt="Living room lounge area">
+          <img src="assets/images/interior/living-room-lounge.jpg" alt="Living room lounge area" loading="lazy" decoding="async">
           <figcaption>Welcoming lounge area</figcaption>
         </figure>
         <figure class="feature-card">
-          <img src="assets/images/interior/dining-area.jpg" alt="Dining area inside the unit">
+          <img src="assets/images/interior/dining-area.jpg" alt="Dining area inside the unit" loading="lazy" decoding="async">
           <figcaption>Bright dining corner</figcaption>
         </figure>
         <figure class="feature-card">
-          <img src="assets/images/interior/bedroom-main.jpg" alt="Main bedroom with towels prepared on the bed">
+          <img src="assets/images/interior/bedroom-main.jpg" alt="Main bedroom with towels prepared on the bed" loading="lazy" decoding="async">
           <figcaption>Restful bedroom setup</figcaption>
         </figure>
         <figure class="feature-card">
-          <img src="assets/images/interior/bedroom-detail.jpg" alt="Bedroom detail with mirror and bed">
+          <img src="assets/images/interior/bedroom-detail.jpg" alt="Bedroom detail with mirror and bed" loading="lazy" decoding="async">
           <figcaption>Thoughtful bedroom details</figcaption>
         </figure>
         <figure class="feature-card">
-          <img src="assets/images/interior/tv-console.jpg" alt="Television console in the living room">
+          <img src="assets/images/interior/tv-console.jpg" alt="Television console in the living room" loading="lazy" decoding="async">
           <figcaption>Living room entertainment area</figcaption>
         </figure>
         <figure class="feature-card">
-          <img src="assets/images/interior/living-room-detail.jpg" alt="Living room detail with sofa and decorative blue wall">
+          <img src="assets/images/interior/living-room-detail.jpg" alt="Living room detail with sofa and decorative blue wall" loading="lazy" decoding="async">
           <figcaption>Soft tones and cozy seating</figcaption>
         </figure>
       </div>
@@ -123,35 +219,35 @@
 
       <div class="amenities-grid">
         <article class="amenity-card accent-aqua">
-          <img src="assets/images/amenities/infinity-pool-view.jpg" alt="Infinity pool at Amerin Residence">
+          <img src="assets/images/amenities/infinity-pool-view.jpg" alt="Infinity pool at Amerin Residence" loading="lazy" decoding="async">
           <div>
             <h3>Pool deck</h3>
             <p>Open views, lounge space, and a resort-style water area for a laid-back afternoon.</p>
           </div>
         </article>
         <article class="amenity-card accent-sand">
-          <img src="assets/images/amenities/lap-pool-view.jpg" alt="Lap pool area at Amerin Residence">
+          <img src="assets/images/amenities/lap-pool-view.jpg" alt="Lap pool area at Amerin Residence" loading="lazy" decoding="async">
           <div>
             <h3>Lap pool</h3>
             <p>A clean, modern pool space suitable for a quick swim or a quiet evening wind-down.</p>
           </div>
         </article>
         <article class="amenity-card accent-olive">
-          <img src="assets/images/amenities/fitness-gym.webp" alt="Gym at Amerin Residence">
+          <img src="assets/images/amenities/fitness-gym.webp" alt="Gym at Amerin Residence" loading="lazy" decoding="async">
           <div>
             <h3>Fitness room</h3>
             <p>On-site gym access helps guests keep routines simple without leaving the residence.</p>
           </div>
         </article>
         <article class="amenity-card accent-copper">
-          <img src="assets/images/amenities/badminton-court.jpg" alt="Indoor badminton court">
+          <img src="assets/images/amenities/badminton-court.jpg" alt="Indoor badminton court" loading="lazy" decoding="async">
           <div>
             <h3>Badminton court</h3>
             <p>Indoor court space adds a family-friendly and active option during your stay.</p>
           </div>
         </article>
         <article class="amenity-card accent-stone">
-          <img src="assets/images/amenities/garden-walkway.jpg" alt="Garden walkway inside Amerin Residence">
+          <img src="assets/images/amenities/garden-walkway.jpg" alt="Garden walkway inside Amerin Residence" loading="lazy" decoding="async">
           <div>
             <h3>Garden walkway</h3>
             <p>Landscaped common areas offer a calmer transition between the city and your unit.</p>
@@ -160,12 +256,37 @@
       </div>
     </section>
 
+    <section class="faq section-shell" id="faq">
+      <div class="section-heading split-heading">
+        <div>
+          <p class="eyebrow">FAQ</p>
+          <h2>Quick answers before guests send an enquiry.</h2>
+        </div>
+        <p class="section-note faq-note">Useful for visitors comparing Balakong stays and looking for fast booking details.</p>
+      </div>
+
+      <div class="faq-list">
+        <details class="faq-item" open>
+          <summary>Where is the homestay located?</summary>
+          <p>The unit is located in Amerin Residence, Balakong, making it a practical choice for short stays, family visits, and business stopovers in the area.</p>
+        </details>
+        <details class="faq-item">
+          <summary>What facilities can guests enjoy?</summary>
+          <p>Guests can access the pool deck, lap pool, fitness room, badminton court, and landscaped common areas shown in the gallery above.</p>
+        </details>
+        <details class="faq-item">
+          <summary>How do I book the homestay?</summary>
+          <p>Tap the WhatsApp button to open a prepared enquiry message and continue the booking conversation directly.</p>
+        </details>
+      </div>
+    </section>
+
     <section class="contact section-shell" id="contact">
       <div class="contact-panel">
         <div>
           <p class="eyebrow">Enquire now</p>
-          <h2>Ready to list this stay or take bookings?</h2>
-          <p>Use the WhatsApp button to start a conversation with a prepared message. If you want direct chat to your own number, replace the current WhatsApp link with your business number.</p>
+          <h2>Ready to book your Balakong homestay?</h2>
+          <p>Use the WhatsApp button to start a direct conversation for availability, check-in details, and booking questions. If you want enquiries sent to your own number, replace the current WhatsApp link with your business number.</p>
         </div>
         <a class="button button-primary" href="https://wa.me/?text=Hi%2C%20I%27m%20interested%20in%20the%20Amerin%20Residence%20homestay%20at%20Balakong." target="_blank" rel="noopener noreferrer">Open WhatsApp</a>
       </div>
