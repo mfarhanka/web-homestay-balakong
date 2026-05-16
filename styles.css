@@ -1,0 +1,449 @@
+:root {
+  --bg: #f4efe7;
+  --bg-deep: #d7e6e8;
+  --surface: rgba(255, 251, 246, 0.86);
+  --surface-strong: #fff8f0;
+  --ink: #1d2a2f;
+  --muted: #57676f;
+  --line: rgba(29, 42, 47, 0.1);
+  --aqua: #1f8a96;
+  --aqua-deep: #12545c;
+  --sand: #c98c5d;
+  --shadow: 0 24px 60px rgba(31, 52, 56, 0.14);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Manrope", sans-serif;
+  color: var(--ink);
+  background:
+    radial-gradient(circle at top left, rgba(31, 138, 150, 0.18), transparent 32%),
+    radial-gradient(circle at right 20%, rgba(201, 140, 93, 0.18), transparent 28%),
+    linear-gradient(180deg, #eff8f7 0%, var(--bg) 35%, #f8f3ed 100%);
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.hero {
+  min-height: 100vh;
+  padding: 1.4rem clamp(1.2rem, 2vw, 2.4rem) 4rem;
+  background:
+    linear-gradient(120deg, rgba(8, 29, 33, 0.76), rgba(18, 84, 92, 0.35)),
+    url("assets/images/exterior/amerin-residence-pool-view.jpg") center/cover;
+  color: #f7f4ef;
+}
+
+.site-nav,
+.hero-panel,
+.section-shell,
+.contact-panel {
+  width: min(1120px, 100%);
+  margin: 0 auto;
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.brand-block {
+  display: grid;
+  gap: 0.2rem;
+}
+
+.eyebrow {
+  margin: 0;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.brand {
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  font-weight: 600;
+}
+
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-weight: 600;
+}
+
+.nav-links a {
+  position: relative;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.25rem;
+  width: 100%;
+  height: 1px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 180ms ease;
+}
+
+.nav-links a:hover::after,
+.nav-links a:focus-visible::after {
+  transform: scaleX(1);
+}
+
+.hero-panel {
+  display: grid;
+  grid-template-columns: minmax(0, 1.3fr) minmax(260px, 0.7fr);
+  gap: 2rem;
+  align-items: end;
+  padding-top: clamp(4rem, 12vh, 9rem);
+}
+
+.hero-copy h1,
+.section-heading h2,
+.contact-panel h2 {
+  margin: 0;
+  font-family: "Cormorant Garamond", serif;
+  line-height: 0.95;
+  letter-spacing: -0.02em;
+}
+
+.hero-copy h1 {
+  max-width: 9ch;
+  font-size: clamp(3.6rem, 10vw, 7rem);
+}
+
+.hero-text {
+  max-width: 36rem;
+  margin: 1.2rem 0 0;
+  font-size: 1.05rem;
+  line-height: 1.75;
+  color: rgba(247, 244, 239, 0.9);
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+  margin-top: 2rem;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 3.2rem;
+  padding: 0.85rem 1.3rem;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  font-weight: 800;
+  transition: transform 180ms ease, background-color 180ms ease, color 180ms ease, border-color 180ms ease;
+}
+
+.button:hover,
+.button:focus-visible,
+.whatsapp-float:hover,
+.whatsapp-float:focus-visible {
+  transform: translateY(-2px);
+}
+
+.button-primary {
+  background: linear-gradient(135deg, #22a071, #17865e);
+  color: #fff;
+  box-shadow: 0 18px 45px rgba(21, 96, 67, 0.25);
+}
+
+.button-secondary {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.35);
+  color: #fff;
+  backdrop-filter: blur(10px);
+}
+
+.hero-card {
+  padding: 1.4rem;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 28px;
+  background: rgba(255, 247, 240, 0.12);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(12px);
+}
+
+.card-label,
+.card-footnote,
+.section-note {
+  margin: 0;
+  line-height: 1.7;
+  color: rgba(247, 244, 239, 0.82);
+}
+
+.hero-card ul {
+  margin: 1rem 0 0;
+  padding-left: 1.2rem;
+  display: grid;
+  gap: 0.65rem;
+}
+
+.hero-card-divider {
+  height: 1px;
+  margin: 1.2rem 0;
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.section-shell {
+  padding: 5rem clamp(1.2rem, 2vw, 2.4rem) 0;
+}
+
+.section-heading {
+  display: grid;
+  gap: 0.8rem;
+  margin-bottom: 1.8rem;
+}
+
+.section-heading h2,
+.contact-panel h2 {
+  font-size: clamp(2.5rem, 6vw, 4.1rem);
+  max-width: 14ch;
+}
+
+.section-heading .eyebrow,
+.contact .eyebrow {
+  color: var(--aqua-deep);
+}
+
+.intro-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.intro-grid article,
+.amenity-card,
+.feature-card,
+.contact-panel {
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+}
+
+.intro-grid article {
+  padding: 1.5rem;
+  border-radius: 24px;
+  background: rgba(255, 250, 245, 0.84);
+}
+
+.intro-grid h3,
+.amenity-card h3 {
+  margin: 0 0 0.55rem;
+  font-size: 1.05rem;
+}
+
+.intro-grid p,
+.amenity-card p,
+.contact-panel p,
+.feature-card figcaption,
+.section-note {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.75;
+}
+
+.split-heading {
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 340px);
+  align-items: end;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.feature-card {
+  overflow: hidden;
+  border-radius: 28px;
+  background: var(--surface);
+}
+
+.feature-card-large {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.feature-card img {
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+.feature-card-large img {
+  aspect-ratio: 1.3 / 1;
+}
+
+.feature-card figcaption {
+  padding: 1rem 1.1rem 1.2rem;
+}
+
+.amenities-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.amenity-card {
+  display: grid;
+  grid-template-columns: 180px minmax(0, 1fr);
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 28px;
+  background: var(--surface);
+}
+
+.amenity-card img {
+  height: 100%;
+  min-height: 180px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.accent-aqua {
+  background: linear-gradient(135deg, rgba(224, 247, 250, 0.88), rgba(255, 250, 245, 0.92));
+}
+
+.accent-sand {
+  background: linear-gradient(135deg, rgba(253, 238, 222, 0.92), rgba(255, 251, 246, 0.92));
+}
+
+.accent-olive {
+  background: linear-gradient(135deg, rgba(235, 243, 228, 0.92), rgba(255, 251, 246, 0.92));
+}
+
+.accent-copper {
+  background: linear-gradient(135deg, rgba(248, 231, 221, 0.94), rgba(255, 251, 246, 0.92));
+}
+
+.accent-stone {
+  background: linear-gradient(135deg, rgba(239, 243, 240, 0.94), rgba(255, 251, 246, 0.92));
+}
+
+.contact {
+  padding-bottom: 5rem;
+}
+
+.contact-panel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem 2rem;
+  padding: clamp(1.4rem, 4vw, 2.2rem);
+  border-radius: 32px;
+  background:
+    linear-gradient(135deg, rgba(13, 57, 63, 0.96), rgba(23, 100, 109, 0.92)),
+    url("assets/images/amenities/infinity-pool-view.jpg") center/cover;
+  color: #fff;
+}
+
+.contact-panel .eyebrow,
+.contact-panel p {
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.whatsapp-float {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  z-index: 10;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 10.4rem;
+  min-height: 3.6rem;
+  padding: 0.85rem 1.2rem;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #25d366, #0f9b49);
+  color: #fff;
+  font-weight: 800;
+  box-shadow: 0 20px 40px rgba(13, 110, 50, 0.3);
+}
+
+@media (max-width: 960px) {
+  .hero-panel,
+  .split-heading,
+  .intro-grid,
+  .gallery-grid,
+  .amenities-grid,
+  .amenity-card,
+  .contact-panel {
+    grid-template-columns: 1fr;
+  }
+
+  .site-nav,
+  .contact-panel {
+    align-items: flex-start;
+  }
+
+  .site-nav,
+  .contact-panel {
+    flex-direction: column;
+  }
+
+  .feature-card-large {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .amenity-card {
+    grid-template-columns: 1fr;
+  }
+
+  .amenity-card img {
+    min-height: 240px;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero {
+    min-height: auto;
+    padding-bottom: 3rem;
+  }
+
+  .hero-copy h1 {
+    max-width: 100%;
+    font-size: clamp(2.9rem, 16vw, 4.4rem);
+  }
+
+  .section-shell {
+    padding-top: 4rem;
+  }
+
+  .feature-card img,
+  .feature-card-large img,
+  .amenity-card img {
+    aspect-ratio: 1.1 / 1;
+  }
+
+  .whatsapp-float {
+    right: 0.75rem;
+    bottom: 0.75rem;
+    min-width: auto;
+  }
+}
